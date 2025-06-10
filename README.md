@@ -109,11 +109,6 @@ ID=TX200, Amount=10000.00, Location=VE, Merchant=Luxury_Watch_Dealer
 - OpenAI
 - python-dotenv
 
----
-
-## 📜 License
-
-MIT License - Free to use, modify, and distribute.
 
 ---
 
