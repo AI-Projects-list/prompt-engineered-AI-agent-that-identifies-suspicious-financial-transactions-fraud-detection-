@@ -1,23 +1,3 @@
-### 📁 Project: Prompt Engineering for Fraud Detection AI Agent
-
-# 🧠 Description:
-# This project builds a prompt-engineered AI agent that identifies suspicious financial transactions (fraud detection) using GPT-4 via OpenAI API.
-# It includes few-shot prompting and role-based instructions. A Streamlit interface allows user input and output visualization.
-
-## 🔧 Requirements
-# - Python 3.9+
-# - streamlit
-# - openai
-# - dotenv
-
-## 📦 Installation
-# pip install -r requirements.txt
-
-## .env File
-# Create a .env file with:
-# OPENAI_API_KEY=your-api-key-here
-
-# project/app.py
 import os
 import openai
 import streamlit as st
@@ -68,55 +48,3 @@ if st.button("Analyze Transaction"):
     result = analyze_transaction(transaction_input)
     st.markdown("### 🧾 Result")
     st.code(result)
-
-# 📄 requirements.txt
-# streamlit
-# openai
-# python-dotenv
-
-# 📁 .env
-# OPENAI_API_KEY=your-api-key
-
-# 📘 README.md
-"""
-# 🕵️ AI Fraud Detection (Prompt Engineering Project)
-
-This project uses prompt engineering to identify suspicious transactions using GPT-4.
-
-## Features
-- Role-based prompt engineering
-- Few-shot examples
-- Streamlit frontend
-- Uses OpenAI API
-
-## How to Run
-```bash
-git clone https://github.com/yourusername/fraud-prompt-agent.git
-cd fraud-prompt-agent
-pip install -r requirements.txt
-echo "OPENAI_API_KEY=your-api-key" > .env
-streamlit run app.py
-```
-
-## Prompt Structure
-```text
-SYSTEM_PROMPT: AI is a fraud analyst.
-EXAMPLES: Legitimate vs. Suspicious patterns
-INPUT: New transaction detail
-OUTPUT: Fraud status and reason
-```
-
-## Example Input
-```text
-ID=TX999, Amount=4200.00, Location=LA, Merchant=XYZ_Casino
-```
-
-## Output
-```text
-Status: Suspicious
-Reason: High-value transaction at risky merchant
-```
-
-## License
-MIT
-"""
